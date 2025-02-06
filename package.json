@@ -1,0 +1,17 @@
+{
+    "name": "dashboard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^33.0.2"
+    },
+    "dependencies": {
+        "chart.js": "^4.4.5"
+    }
+}
