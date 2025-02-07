@@ -30,6 +30,10 @@ class Page {
         if (set) this.button.click();
     }
 
+    newSection({ title = "Untitled", chips = [] }) {
+        return new section({ title, chips, page:this.page });
+    }
+
     Destroy() {
         this.button.remove();
         this.page.remove();

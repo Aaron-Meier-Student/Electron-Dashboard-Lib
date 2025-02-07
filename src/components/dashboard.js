@@ -11,11 +11,7 @@ class Dashboard {
         ).innerHTML = `<i class="fi fi-ss-bullet"></i><i class="fi fi-ss-bullet pulse"></i>${version}`;
     }
 
-    newPage({
-        title = "Untitled",
-        icon = "fi fi-ss-bullet",
-        set = false,
-    }) {
+    newPage({ title = "Untitled", icon = "fi fi-ss-bullet", set = false }) {
         return new Page({ title, icon, set });
     }
 

@@ -1,0 +1,7 @@
+section .column {
+    min-height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 5px;
+    background-color: #0e0e0e;
+}

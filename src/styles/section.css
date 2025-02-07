@@ -1,0 +1,43 @@
+section {
+    color: white;
+    padding: 25px;
+    background-color: #131313;
+    width: calc(100% - 50px);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+section .title * {
+    margin: 0;
+}
+
+section .title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section .title .chip {
+    margin-left: 10px;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+
+section hr {
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    width: calc(100% - 25px);
+    opacity: 0.1;
+}

@@ -5,5 +5,9 @@ main .page {
     left: 0;
     top: 0;
     opacity: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     transition: 250ms ease-in-out;
 }
