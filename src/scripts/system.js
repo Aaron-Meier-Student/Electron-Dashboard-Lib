@@ -79,8 +79,8 @@ async function loadSystem() {
 
     titleBar(ipcRenderer);
 
-    const script = document.createElement('script');
-    script.src = './client.js';
+    const script = document.createElement("script");
+    script.src = "./client.js";
     document.body.appendChild(script);
 }
 
@@ -100,6 +100,12 @@ class Dashboard {
 
     SetTitle(title) {
         document.querySelector("#titleBar .title").innerHTML = title;
+    }
+
+    SetVersion(version) {
+        document.querySelector(
+            "#titleBar .version"
+        ).innerHTML = `<i class="fi fi-ss-bullet"></i><i class="fi fi-ss-bullet pulse"></i>${version}`;
     }
 }
 

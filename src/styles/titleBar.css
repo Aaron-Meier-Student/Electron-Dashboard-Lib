@@ -63,3 +63,38 @@
 #titleBar .windowActions button:active i {
     font-size: 8px;
 }
+
+#titleBar .version {
+    position: relative;
+    background-color: #00ffff36;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: 1px solid #00ffff36;
+    padding: 2px 5px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+#titleBar .version i {
+    left: 4px;
+    position: absolute;
+    font-size: 10px;
+}
+
+#titleBar .version i.pulse {
+    animation: dotPulse 2s infinite;
+}
+
+@keyframes dotPulse {
+    0% {
+        scale: 1;
+        opacity: 1;
+    }
+    100% {
+        scale: 3;
+        opacity: 0;
+    }
+}

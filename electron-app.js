@@ -1,5 +1,4 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
-const fs = require("fs");
 const path = require("path");
 
 require("electron-reload")(__dirname, {
