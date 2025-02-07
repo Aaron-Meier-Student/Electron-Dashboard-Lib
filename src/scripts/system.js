@@ -95,18 +95,4 @@ async function loadSystem() {
     document.head.appendChild(script);
 }
 
-class Dashboard {
-    constructor() {}
-
-    SetTitle(title) {
-        document.querySelector("#titleBar .title").innerHTML = title;
-    }
-
-    SetVersion(version) {
-        document.querySelector(
-            "#titleBar .version"
-        ).innerHTML = `<i class="fi fi-ss-bullet"></i><i class="fi fi-ss-bullet pulse"></i>${version}`;
-    }
-}
-
 loadSystem();

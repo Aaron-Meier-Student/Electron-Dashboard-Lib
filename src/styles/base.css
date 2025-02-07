@@ -19,16 +19,123 @@ body {
 
 main {
     position: absolute;
-    width: 100%;
+    width: calc(100% - 225px);
+    right: 0;
     height: calc(100% - 25px);
     top: 25px;
     background-color: #070707;
-    border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+nav {
+    position: absolute;
+    width: 225px;
+    left: 0;
+    height: calc(100% - 25px);
+    top: 25px;
+    background-color: #0c0b0b;
+    border-right: 1px solid #131313;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    width: 90%;
+    border-radius: 4px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
+    transition: 250ms;
+}
+
+nav button i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: 250ms;
+}
+nav button:hover i {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+nav button:hover {
+    background-color: #131313;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+nav button:active i {
+    scale: 0.8;
+}
+
+nav button:active {
+    font-size: 12px
+}
+
+nav button.active {
+    background-color: #131313;
+    color: rgba(255, 255, 255, 1);
+}
+
+nav button.active i {
+    color: rgba(255, 255, 255, 1);
+}
+
+nav .navBreak {
+    width: 90%;
+    height: 1px;
+    background-color: #131313;
+    margin: 10px 0;
+}
+
+nav .title {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 40px;
+    position: relative;
+    padding-left: 45px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+nav .title i {
+    position: absolute;
+    left: 10px;
+    font-size: 24px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 i {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+.fadeOut {
+    opacity: 0 !important;
+}
+.fadeIn {
+    opacity: 1 !important;
 }
