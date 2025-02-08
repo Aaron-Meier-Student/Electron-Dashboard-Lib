@@ -9,6 +9,7 @@ class Dashboard {
         document.querySelector(
             "#titleBar .version"
         ).innerHTML = `<i class="fi fi-ss-bullet"></i><i class="fi fi-ss-bullet pulse"></i>${version}`;
+        document.querySelector("title").innerHTML = title;
     }
 
     newPage({ title = "Untitled", icon = "fi fi-ss-bullet", set = false }) {

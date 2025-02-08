@@ -74,21 +74,11 @@ async function loadComponents() {
 }
 
 async function loadSystem() {
-    loadStyles();
-    await loadComponents();
-
-    titleBar(ipcRenderer);
-
-    const script = document.createElement("script");
-    script.src = "./client.js";
-    document.body.appendChild(script);
-}
-
-async function loadSystem() {
     await loadStyles();
     await loadComponents();
 
     titleBar(ipcRenderer);
+    navigationHandler();
 
     const script = document.createElement("script");
     script.src = "./client.js";

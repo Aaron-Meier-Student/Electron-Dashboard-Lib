@@ -2,6 +2,7 @@
     font-family: Montserrat;
     user-select: none;
     outline: none;
+    text-wrap: nowrap;
 }
 
 html,
@@ -25,6 +26,7 @@ main {
     top: 25px;
     background-color: #070707;
     border-bottom-right-radius: 8px;
+    transition: 250ms;
 }
 
 nav {
@@ -42,6 +44,8 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    overflow: hidden;
+    transition: 250ms;
 }
 
 nav button {
@@ -113,6 +117,7 @@ nav .title {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-wrap: wrap;
     font-weight: 700;
 }
 
@@ -122,6 +127,64 @@ nav .title i {
     font-size: 24px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+nav .shrink {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    padding: 5px;
+    right: 15px;
+    bottom: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    transition: 250ms;
+}
+nav .shrink i {
+    transform: rotateY(0deg);
+    font-size: 24px;
+}
+nav .shrink.mini i {
+    transform: rotateY(180deg);
+    font-size: 24px;
+}
+nav .shrink.mini {
+    right: 5px;
+}
+nav .shrink:hover {
+    background-color: #131313;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+main.mini {
+    width: calc(100% - 45px);
+}
+nav.mini {
+    width: 45px;
+}
+
+nav.mini button {
+    width: 35px;
+    color: transparent;
+}
+
+nav.mini button i {
+    transform: translateX(-2px);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+nav.mini button.active i {
+    transform: translateX(-2px);
+    color: rgba(255, 255, 255, 1);
+}
+
+nav.mini .title {
+    color: transparent;
+}
+nav.mini .title i {
+    color: white;
+    right: 15px;
 }
 
 i {

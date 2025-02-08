@@ -18,10 +18,14 @@ function createExamplePage() {
         icon: "br-info",
         set: true,
     });
+    dashboard.createNavBreak();
 
     const exampleSection1 = ExamplePage.newSection({
         title: "Section 1",
-        chips: [{ title: "Chip 1", color: "#ff0000" },{ title: "Chip 2", color: "#00ffff" }],
+        chips: [
+            { title: "Chip 1", color: "#ff0000" },
+            { title: "Chip 2", color: "#00ffff" },
+        ],
     });
     const section1column1 = exampleSection1.newColumn("Column 1");
     const section1column2 = exampleSection1.newColumn("Column 2");
