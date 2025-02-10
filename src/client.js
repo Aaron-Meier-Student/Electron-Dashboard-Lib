@@ -45,6 +45,7 @@ function createExamplePage() {
             console.log("Button 2 Clicked");
         }
     });
+    section1column1.createBreak();
     const section1Container = section1column1.newContainer();
     const section1ContainerButton = section1Container.newButton({
         title: "Button 3",
@@ -54,12 +55,30 @@ function createExamplePage() {
         }
     });
     section1ContainerButton.toggle();
+    section1ContainerButton.setText("Button 754")
     section1Container.newButton({
         title: "Button 4",
         func: () => {
             console.log("Button 4 Clicked");
         }
     });''
+    section1column1.createBreak();
+    section1column1.newCheckbox({
+        title: "Checkbox 1",
+        func: (status) => {
+            console.log("Checkbox 1 Clicked:", status);
+        }
+    })
+    const testcheckbox = section1column1.newCheckbox({
+        label: "Test Label",
+        title: "Checkbox 2",
+        func: (status) => {
+            console.log("Checkbox 2 Clicked:", status);
+        }
+    })
+    testcheckbox.setText("Cookie");
+    section1column1.createBreak();
+
     const exampleSection2 = ExamplePage.newSection({
         title: "Section 2",
     });

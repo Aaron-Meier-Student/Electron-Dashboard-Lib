@@ -11,8 +11,8 @@ class column {
     newButton({ label, title = "Untitled", icon, func }) {
         return new button({ label, title, icon, func, column: this.element });
     }
-    newCheckbox({ label, title = "Untitled", func }) {
-        return new checkbox({ label, title, func, column: this.element });
+    newCheckbox({ label, title = "Untitled", status = false, func }) {
+        return new checkbox({ label, title, status, func, column: this.element });
     }
     newInput({ label, title = "Untitled", func }) {
         return new input({ label, title, func, column: this.element });

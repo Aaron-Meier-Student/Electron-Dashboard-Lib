@@ -15,7 +15,6 @@
     margin: 0 5px !important;
 }
 
-
 .column .column {
     min-height: 0px;
     height: auto;
@@ -89,6 +88,21 @@
 }
 .column button:disabled:active {
     scale: 1 !important;
+}
+
+.column .checkbox.enabled {
+    background-color: #0000ff;
+    border: 1px solid #587aff;
+}
+.column .checkbox {
+    background-color: #070707;
+    border: 1px solid #131313;
+}
+.column .checkbox:hover {
+    background-color: #0c0c0c;
+}
+.column .checkbox.enabled:hover {
+    background-color: #2b2bff;
 }
 
 .column h3 {
