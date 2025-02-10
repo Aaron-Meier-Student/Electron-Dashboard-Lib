@@ -1,8 +1,97 @@
-section .column {
+.column {
     min-height: 50px;
+    height: 100%;
     width: 100%;
     border-radius: 4px;
     border: 1px solid #131313;
     margin: 5px;
     background-color: #070707;
+}
+
+.column > * {
+    margin: 5px !important;
+}
+.column .column > * {
+    margin: 0 5px !important;
+}
+
+
+.column .column {
+    min-height: 0px;
+    height: auto;
+    padding: 10px 5px;
+    width: calc(100% - 22px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.column hr {
+    width: 96%;
+    opacity: 0.1;
+    margin: 5px;
+}
+
+.column button:has(h4) {
+    position: static;
+    justify-self: right;
+    width: auto;
+}
+
+.column button h4 {
+    position: absolute;
+    margin: 0;
+    left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.column button {
+    color: white;
+    width: calc(100% - 10px);
+    border: none;
+    outline: none;
+    background-color: #0000ff;
+    border-radius: 4px;
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.column .column button {
+    position: static;
+    transform: translateX(0);
+}
+
+.column button i {
+    margin-right: 5px;
+    transition: 250ms;
+}
+
+.column button:hover {
+    background-color: #2b2bff;
+}
+
+.column button:active {
+    background-color: #5555ff;
+}
+
+.column button:disabled {
+    background-color: #17171d;
+    color: #3d3d44;
+    cursor: not-allowed;
+}
+.column button:disabled:active {
+    scale: 1 !important;
+}
+
+.column h3 {
+    margin: 6px;
+    font-size: 14px;
 }
