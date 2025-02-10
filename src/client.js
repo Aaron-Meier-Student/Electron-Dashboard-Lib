@@ -28,8 +28,7 @@ function createExamplePage() {
         ],
     });
     const section1column1 = exampleSection1.newColumn();
-    const section1column2 = exampleSection1.newColumn();
-    const section1Title = section1column1.newTitle("Column 1");
+    const section1Title = section1column1.newTitle("Example Column");
     section1column1.createBreak();
     section1column1.newButton({
         title: "Button 1",
@@ -39,15 +38,15 @@ function createExamplePage() {
         }
     });
     section1column1.newButton({
-        label: "Test Label",
+        label: "Button Label",
         title: "Button 2",
         func: () => {
             console.log("Button 2 Clicked");
         }
     });
     section1column1.createBreak();
-    const section1Container = section1column1.newContainer();
-    const section1ContainerButton = section1Container.newButton({
+    const section1Container1 = section1column1.newContainer();
+    const section1ContainerButton = section1Container1.newButton({
         title: "Button 3",
         icon: "ss-objects-column",
         func: () => {
@@ -55,13 +54,14 @@ function createExamplePage() {
         }
     });
     section1ContainerButton.toggle();
-    section1ContainerButton.setText("Button 754")
-    section1Container.newButton({
+    section1ContainerButton.setText("Button 3 Edit")
+    section1Container1.newButton({
         title: "Button 4",
         func: () => {
             console.log("Button 4 Clicked");
         }
     });''
+    section1column1.createBreak();
     section1column1.createBreak();
     section1column1.newCheckbox({
         title: "Checkbox 1",
@@ -70,24 +70,28 @@ function createExamplePage() {
         }
     })
     const testcheckbox = section1column1.newCheckbox({
-        label: "Test Label",
+        label: "Checkbox Label",
         title: "Checkbox 2",
         func: (status) => {
             console.log("Checkbox 2 Clicked:", status);
         }
     })
-    testcheckbox.setText("Cookie");
+    testcheckbox.setText("Checkbox 3 Edit");
     section1column1.createBreak();
-
-    const exampleSection2 = ExamplePage.newSection({
-        title: "Section 2",
-    });
-    const section2column1 = exampleSection2.newColumn();
-    const section2column2 = exampleSection2.newColumn();
-    const section2column3 = exampleSection2.newColumn();
-
-    const exampleSection3 = ExamplePage.newSection({ title: "Section 3" });
-    const section3column1 = exampleSection3.newColumn();
+    const section1Container2 = section1column1.newContainer();
+    section1Container2.newCheckbox({
+        title: "Checkbox 3",
+        func: (status) => {
+            console.log("Checkbox 3 Clicked:", status);
+        }
+    })
+    section1Container2.newCheckbox({
+        title: "Checkbox 4",
+        func: (status) => {
+            console.log("Checkbox 4 Clicked:", status);
+        }
+    })
+    section1column1.createBreak();
 }
 
 createNavTitle();

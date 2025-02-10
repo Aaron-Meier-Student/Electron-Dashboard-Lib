@@ -27,9 +27,9 @@
 }
 
 .column hr {
-    width: 96%;
+    width: 99%;
     opacity: 0.1;
-    margin: 5px;
+    margin: 5px auto !important;
 }
 
 .column button:has(h4) {
