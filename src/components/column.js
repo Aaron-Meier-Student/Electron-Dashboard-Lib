@@ -29,16 +29,6 @@ class column {
             column: this.element,
         });
     }
-    newSlider({ title = "Untitled", min = 0, max = 100, start = 50, func }) {
-        return new slider({
-            title,
-            min,
-            max,
-            func,
-            start,
-            column: this.element,
-        });
-    }
     createBreak() {
         const navBreak = document.createElement("hr");
         this.element.appendChild(navBreak);
