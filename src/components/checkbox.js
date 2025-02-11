@@ -20,7 +20,8 @@ class checkbox {
     }
     
     toggle() {
-
+        this.enabled = !this.enabled;
+        this.element.classList.toggle("enabled");
     }
 
     setText(text) {

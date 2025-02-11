@@ -14,8 +14,8 @@ class column {
     newCheckbox({ label, title = "Untitled", status = false, func }) {
         return new checkbox({ label, title, status, func, column: this.element });
     }
-    newInput({ label, title = "Untitled", func }) {
-        return new input({ label, title, func, column: this.element });
+    newInput({ label, title = "Untitled", placeholder = "Input", func }) {
+        return new input({ label, title, placeholder, func, column: this.element });
     }
     newSlider({ title = "Untitled", min = 0, max = 100, start = 50, func }) {
         return new slider({ title, min, max, func, start, column: this.element });

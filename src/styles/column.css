@@ -105,7 +105,73 @@
     background-color: #2b2bff;
 }
 
-.column h3 {
+.column > h3 {
     margin: 6px;
     font-size: 14px;
+}
+
+.column .input {
+    position: relative;
+    color: transparent;
+    width: calc(100% - 10px);
+    outline: none;
+    background-color: transparent;
+    border-radius: 4px;
+    display: flex;
+    margin: 0 5px;
+    margin-top: 7px !important;
+    align-items: center;
+    justify-content: right;
+    font-weight: 600;
+    transition: 250ms;
+}
+
+.column .input:not(:has(h4)) h3 {
+    position: absolute;
+    color: white;
+    left: 10px;
+    top: -17px;
+    font-size: 10px;
+    background-color: #070707;
+    padding: 0 5px;
+}
+.column .input:has(h4) h3 {
+    position: absolute;
+    color: white;
+    right: 140px;
+    top: -17px;
+    font-size: 10px;
+    background-color: #070707;
+    padding: 0 5px;
+}
+
+.column .input input {
+    color: white;
+    width: 100%;
+    border: 1px solid #131313;
+    outline: none;
+    background-color: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-weight: 600;
+    transition: 250ms;
+}
+
+.column .input:has(h4) input {
+    position: static;
+    justify-self: right;
+    width: auto;
+}
+
+
+.column .input h4 {
+    position: absolute;
+    margin: 0;
+    left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
 }

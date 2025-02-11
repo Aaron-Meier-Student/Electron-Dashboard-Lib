@@ -92,6 +92,37 @@ function createExamplePage() {
         }
     })
     section1column1.createBreak();
+    section1column1.createBreak();
+    section1column1.newInput({
+        title: "Input 1",
+        placeholder: "Placeholder",
+        func: (value) => {
+            console.log("Input 1 Value:", value);
+        }
+    })
+    section1column1.newInput({
+        label: "Input Label",
+        title: "Input 2",
+        placeholder: "Placeholder",
+        func: (value) => {
+            console.log("Input 2 Value:", value);
+        }
+    })
+    const section1Container3 = section1column1.newContainer();
+    section1Container3.newInput({
+        title: "Input 3",
+        placeholder: "Placeholder",
+        func: (value) => {
+            console.log("Input 3 Value:", value);
+        }
+    })
+    section1Container3.newInput({
+        title: "Input 4",
+        placeholder: "Placeholder",
+        func: (value) => {
+            console.log("Input 4 Value:", value);
+        }
+    })
 }
 
 createNavTitle();
