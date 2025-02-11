@@ -124,7 +124,6 @@ function createExamplePage() {
             console.log("Input 4 Value:", value);
         },
     });
-    section1column1.newTable({});
 }
 
 notification({

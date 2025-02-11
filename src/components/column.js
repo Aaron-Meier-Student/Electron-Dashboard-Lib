@@ -39,9 +39,6 @@ class column {
             column: this.element,
         });
     }
-    newTable(data = {}) {
-        return new table({ data, column: this.element });
-    }
     createBreak() {
         const navBreak = document.createElement("hr");
         this.element.appendChild(navBreak);
