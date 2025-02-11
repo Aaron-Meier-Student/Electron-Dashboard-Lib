@@ -1,0 +1,45 @@
+#notificationHolder {
+    position: absolute;
+    right: 0;
+    top: 70%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    color: white;
+    z-index: 10000;
+}
+
+#notificationHolder > div {
+    position: relative;
+    background-color: #0c0c0c;
+    padding: 15px;
+    height: 90px;
+    width: calc(100% - 30px);
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#notificationHolder h4,
+#notificationHolder > div p {
+    margin: 0;
+}
+
+#notificationHolder hr {
+    margin: 7px 0;
+    opacity: 0.2;
+}
+
+#notificationHolder > div > div {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+}

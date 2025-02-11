@@ -1,5 +1,4 @@
 class Page {
-
     constructor({ title, icon, set }) {
         this.button = document.createElement("button");
         this.page = document.createElement("div");
@@ -18,7 +17,7 @@ class Page {
                 setTimeout(() => {
                     page.classList.add("hidden");
                 }, 250);
-            })
+            });
             this.page.classList.remove("hidden");
             setTimeout(() => {
                 this.page.classList.add("fadeIn");
@@ -31,7 +30,7 @@ class Page {
     }
 
     newSection({ title = "Untitled", chips = [] }) {
-        return new section({ title, chips, page:this.page });
+        return new section({ title, chips, page: this.page });
     }
 
     Destroy() {

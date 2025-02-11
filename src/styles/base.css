@@ -86,7 +86,7 @@ nav button:active i {
 }
 
 nav button:active {
-    font-size: 12px
+    font-size: 12px;
 }
 
 nav button.active {

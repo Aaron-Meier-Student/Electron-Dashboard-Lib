@@ -36,14 +36,25 @@
         <header id="titleBar">
             <i class="icon"></i>
             <h1 class="title">Untitled Dashboard</h1>
-            <h2 class="version"><i class="fi fi-ss-bullet"></i><i class="fi fi-ss-bullet pulse"></i>Version</h2>
+            <h2 class="version">
+                <i class="fi fi-ss-bullet"></i
+                ><i class="fi fi-ss-bullet pulse"></i>Version
+            </h2>
             <div class="windowActions">
                 <button class="mini"><i class="fi fi-br-minus"></i></button>
                 <button class="full"><i class="fi fi-br-expand"></i></button>
                 <button class="close"><i class="fi fi-br-x"></i></button>
             </div>
         </header>
-        <nav><button class="shrink"><i class="fi fi-br-angle-small-left"></i></button></nav>
+        <nav>
+            <button class="shrink">
+                <i class="fi fi-br-angle-small-left"></i>
+            </button>
+        </nav>
         <main></main>
+        <div id="notificationHolder"></div>
+        <div id="promptHolder" class="fadeOut hidden">
+            <div id="promptDisplay"></div>
+        </div>
     </body>
 </html>

@@ -12,23 +12,42 @@ class column {
         return new button({ label, title, icon, func, column: this.element });
     }
     newCheckbox({ label, title = "Untitled", status = false, func }) {
-        return new checkbox({ label, title, status, func, column: this.element });
+        return new checkbox({
+            label,
+            title,
+            status,
+            func,
+            column: this.element,
+        });
     }
     newInput({ label, title = "Untitled", placeholder = "Input", func }) {
-        return new input({ label, title, placeholder, func, column: this.element });
+        return new input({
+            label,
+            title,
+            placeholder,
+            func,
+            column: this.element,
+        });
     }
     newSlider({ title = "Untitled", min = 0, max = 100, start = 50, func }) {
-        return new slider({ title, min, max, func, start, column: this.element });
+        return new slider({
+            title,
+            min,
+            max,
+            func,
+            start,
+            column: this.element,
+        });
     }
-    newTable({ title = "Untitled" }) {
-        return new table({ title, column: this.element });
+    newTable(data = {}) {
+        return new table({ data, column: this.element });
     }
     createBreak() {
         const navBreak = document.createElement("hr");
         this.element.appendChild(navBreak);
     }
     newContainer() {
-        return new column({section: this.element});
+        return new column({ section: this.element });
     }
 
     Destroy() {

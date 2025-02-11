@@ -13,15 +13,15 @@ class input {
             this.label = document.createElement("h4");
             this.label.innerHTML = label;
             this.element.appendChild(this.label);
-        };
+        }
         if (func) {
             this.element.addEventListener("focusout", () => {
                 func(this.input.value);
             });
-        };
+        }
         column.appendChild(this.element);
     }
-    
+
     toggle() {
         this.enabled = !this.enabled;
         this.element.classList.toggle("enabled");
